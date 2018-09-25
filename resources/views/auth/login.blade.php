@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+                <div class="card-header text-white font-weight-bold bg-danger">{{ __('Login') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}" aria-label="{{ __('Login') }}">
@@ -53,10 +54,10 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-danger">
                                     {{ __('Login') }}
                                 </button>
-                                <a href="{{ url('auth/google')}}" class="btn btn-primary">Iniciar con Google</a>
+                                <a href="{{ url('auth/google')}}" class="btn btn-danger">Iniciar con Google</a>
                                 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">
                                     {{ __('Forgot Your Password?') }}

@@ -70,10 +70,10 @@
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
-                        <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/home') }}">Inicio</a>
                     @else
-                        <a href="{{ route('login') }}">Login</a>
-                        <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ route('login') }}">Acceder</a>
+                        <a href="{{ route('register') }}">Registro</a>
                     @endauth
                 </div>
             @endif
@@ -82,7 +82,10 @@
                 <div class="title m-b-md">
                     EEPIS
                 </div>
-
+            <b> Evaluación a Estudiantes Principiantes de Ingenieria de Sistemas <br>
+                Universidad del Valle - Sede Tuluá<br>
+            </b>
+                <br>
                 <div class="links">
                     <a href="https://laravel.com/docs">Documentation</a>
                     <a href="https://laracasts.com">Laracasts</a>

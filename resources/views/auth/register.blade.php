@@ -1,11 +1,12 @@
 @extends('layouts.app')
 
 @section('content')
+<br>
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
+                <div class="card-header text-white font-weight-bold bg-danger">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}" aria-label="{{ __('Register') }}">
@@ -63,10 +64,10 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-danger">
                                     {{ __('Register') }}
                                 </button>
-                                <a href="{{ url('auth/google')}}" class="btn btn-primary">Iniciar con Google</a>
+                                <a href="{{ url('auth/google')}}" class="btn btn-danger">Iniciar con Google</a>
                             </div>
                         </div>
                     </form>
