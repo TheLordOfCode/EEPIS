@@ -70,6 +70,10 @@
                                 <a href="{{ url('auth/google')}}" class="btn btn-danger">Iniciar con Google</a>
                             </div>
                         </div>
+                        <br>
+                          <center>
+                                    <div class="g-recaptcha" data-sitekey="6Levq3IUAAAAAACXmaVr-SigZN_DWAo-FbGslgZh"></div>
+                         </center>  
                     </form>
                 </div>
             </div>

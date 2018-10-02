@@ -57,6 +57,10 @@
                                 </button>
                             </div>
                         </div>
+                        <br>
+                          <center>
+                                    <div class="g-recaptcha" data-sitekey="6Levq3IUAAAAAACXmaVr-SigZN_DWAo-FbGslgZh"></div>
+                         </center>  
                     </form>
                 </div>
             </div>
