@@ -61,7 +61,9 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required>
                             </div>
                         </div>
-
+                        <center>
+                                    <div  class="g-recaptcha" data-sitekey="6Levq3IUAAAAAACXmaVr-SigZN_DWAo-FbGslgZh" required></div>
+                         </center>
                         <div class="form-group row mb-0">
                             <div class="col-md-6 offset-md-4">
                                 <button type="submit" class="btn btn-danger">
@@ -71,9 +73,7 @@
                             </div>
                         </div>
                         <br>
-                          <center>
-                                    <div class="g-recaptcha" data-sitekey="6Levq3IUAAAAAACXmaVr-SigZN_DWAo-FbGslgZh"></div>
-                         </center>  
+                       
                     </form>
                 </div>
             </div>
