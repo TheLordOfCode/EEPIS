@@ -20,6 +20,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::group(['middleware' => ['auth']],function(){
+    Route::get('/dashboard', 'AdminController@dashboard');
+    Route::get('/home/settings', 'AdminController@settings');
+    Route::get('/home/student_data', 'AdminController@student_data');
+    Route::get('/home/quiz', 'AdminController@quiz');
+    Route::get('/home/upload_data', 'AdminController@upload_data');
+    Route::get('/home/results', 'AdminController@results');
+});
+
 Route::get('auth/{provider}', 'Auth\LoginController@redirectToProvider');
 Route::get('auth/{provider}/callback', 'Auth\LoginController@handleProviderCallback');
 
