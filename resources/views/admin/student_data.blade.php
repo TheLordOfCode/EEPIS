@@ -71,10 +71,8 @@
                                     <label class="control-label">Programa</label>
                                     <div class="controls">
                                         <select type="text" name="programa" id="programa" required="required">
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
-                                            <option></option>
+                                            <option value=""></option>
+                                            <option value="1">Ingeniería de Sistemas</option>
                                         </select>
                                     </div>
                                 </div>
