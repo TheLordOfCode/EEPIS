@@ -18,6 +18,7 @@ class CreateEstudianteTable extends Migration
             $table->integer('documento_identidad')->unique();
             $table->string('nombres');
             $table->string('apellidos');
+            $table->string('sexo');
             $table->integer('telefono');
             $table->integer('celular');
             $table->integer('correo')->unique();

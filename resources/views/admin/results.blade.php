@@ -94,7 +94,7 @@
     <div id="content">
         <div id="content-header">
             <div id="breadcrumb"> <a href="{{ url('/home') }}" title="ir a Inicio" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{ url('/home/results') }}" title="ir a Resultados" class="tip-bottom"><i class="icon icon-signal"></i> Resultados</a>  </div>
-            <h1>Graficos Generales</h1>
+            <h1>Graficos Generales Estudiantes de Ingenieria de Sistemas</h1>
         </div>
         <div class="container-fluid">
             <hr>

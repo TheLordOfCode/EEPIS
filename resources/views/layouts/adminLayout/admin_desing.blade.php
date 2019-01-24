@@ -4,11 +4,13 @@
     <title>EEPIS</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{{asset('css/backend_css/toastr.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/bootstrap-responsive.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/fullcalendar.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/matrix-style.css')}}" />
     <link rel="stylesheet" href="{{asset('css/backend_css/matrix-media.css')}}" />
+
     <link href="{{ asset('fonts/backend_fonts/css/font-awesome.css')}}" rel="stylesheet" />
    <!-- <link rel="stylesheet" href="{{ asset('css/backend_css/jquery.gritter.css')}}" /> -->
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>
@@ -46,7 +48,7 @@
 <script src="{{ asset('js/backend_js/matrix.popover.js') }}"></script>
 <script src="{{ asset('js/backend_js/jquery.dataTables.min.js') }}"></script>
 <script src="{{ asset('js/backend_js/matrix.tables.js') }}"></script>
-
+<script src="{{asset('js/backend_js/toastr.js') }}"></script>
 
 <script type="text/javascript">
     // This function is called from the pop-up menus to transfer to
@@ -71,5 +73,30 @@
         document.gomenu.selector.selectedIndex = 2;
     }
 </script>
+<script>
+
+   // $(document).ready(function() {
+   toastr.options = {
+       "closeButton": true,
+       "debug": false,
+       "newestOnTop": false,
+       "progressBar": true,
+       "positionClass": "toast-top-right",
+       "preventDuplicates": false,
+       "onclick": null,
+       "showDuration": "300",
+       "hideDuration": "1000",
+       "timeOut": "5000",
+       "extendedTimeOut": "1000",
+       "showEasing": "swing",
+       "hideEasing": "linear",
+       "showMethod": "slideDown",
+       "hideMethod": "fadeOut"
+   }
+       toastr["success"]("Sistema basado en Lógica Difusa", "Bienvenido a EEPIS")
+
+   // });
+</script>
+
 </body>
 </html>

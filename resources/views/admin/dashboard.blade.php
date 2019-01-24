@@ -12,11 +12,11 @@
     <div class="container-fluid">
         <div class="quick-actions_homepage">
             <ul class="quick-actions">
-                <li class="bg_lb span2"> <a href="{{route('home')}}"> <i class="icon-home"></i> Inicio </a> </li>
-                <li class="bg_lo "> <a href="tables.html"> <i class="icon-group"></i> Datos de Estudiantes</a> </li>
-                <li class="bg_ls"> <a href="tables.html"> <i class="icon-file"></i> Crear Cuestionario</a> </li>
-                <li class="bg_ly span2"> <a href="tables.html"> <i class="icon-upload-alt"></i> Cargar Datos</a> </li>
-                <li class="bg_lg span2"> <a href="tables.html"> <i class="icon-signal"></i> Resultados</a> </li>
+                <li class="bg_lb span2"> <a href="{{url('/home')}}"> <i class="icon-home"></i> Inicio </a> </li>
+                <li class="bg_lo "> <a href="{{ url('/home/student_data') }}"> <i class="icon-group"></i> Datos de Estudiantes</a> </li>
+                <li class="bg_ls"> <a href="{{ url('/home/quiz') }}"> <i class="icon-file"></i> Crear Cuestionario</a> </li>
+                <li class="bg_ly span2"> <a href="{{ url('/home/upload_data') }}"> <i class="icon-upload-alt"></i> Cargar Datos</a> </li>
+                <li class="bg_lg span2"> <a href="{{ url('/home/results') }}"> <i class="icon-signal"></i> Resultados</a> </li>
 
             <!--
                 <li class="bg_lg span3"> <a href="charts.html"> <i class="icon-signal"></i> Charts</a> </li>
