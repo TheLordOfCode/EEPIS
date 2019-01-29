@@ -15,9 +15,8 @@ class CreatePruebaTable extends Migration
     {
         Schema::create('prueba', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('id_estudiante')->unsigned();
+            $table->string('nombre_prueba');
             $table->string('tipo_prueba');
-            $table->foreign('id_estudiante')->references('id')->on('estudiante')->onDelete('cascade');
             $table->timestamps();
             $table->engine = 'InnoDB';
         });

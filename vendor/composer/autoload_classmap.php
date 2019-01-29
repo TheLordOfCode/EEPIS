@@ -60,6 +60,7 @@ return array(
     'Dotenv\\Validator' => $vendorDir . '/vlucas/phpdotenv/src/Validator.php',
     'EEPIS\\Console\\Kernel' => $baseDir . '/app/Console/Kernel.php',
     'EEPIS\\Exceptions\\Handler' => $baseDir . '/app/Exceptions/Handler.php',
+    'EEPIS\\Http\\Controllers\\AdminController' => $baseDir . '/app/Http/Controllers/AdminController.php',
     'EEPIS\\Http\\Controllers\\Auth\\ForgotPasswordController' => $baseDir . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
     'EEPIS\\Http\\Controllers\\Auth\\LoginController' => $baseDir . '/app/Http/Controllers/Auth/LoginController.php',
     'EEPIS\\Http\\Controllers\\Auth\\RegisterController' => $baseDir . '/app/Http/Controllers/Auth/RegisterController.php',
