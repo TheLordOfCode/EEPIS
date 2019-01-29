@@ -18,7 +18,7 @@
             ]);
 
             var options = {
-                title: 'Nivel de Estudiantes de Ingenieria de Sistemas',
+                title: 'Nivel Promedio de Estudiantes de Ingenieria de Sistemas',
                 pieHole: 0.4,
                 width: '100%',
                 height: '100%',
